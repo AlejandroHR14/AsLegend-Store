@@ -1,0 +1,59 @@
+body{background-image: url('https://i.pinimg.com/originals/5b/41/f7/5b41f7a94afcb7fdb9d3a0c8addda85e.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#Separador{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+#Separador .content{
+    height: 35px;
+}
+    
+#ribbon{
+    background-color: rgb(0, 0, 0);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgb(255, 255, 255) 25px, rgb(255, 255, 255) 40px);
+}
+
+#ribbon::after{
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+
+#tienda{
+    background-color: rgb(54, 57, 63);
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+#tienda img{
+    position: relative;
+    margin-top: -35px;
+}
+.text-shadow{
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+.card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.card-border:hover{
+    transform: scale(1.05);
+}
